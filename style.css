@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(236, 233, 233);
+}
+
+nav{
+    background-color: white;
+    height: 7vh;
+}
+
+nav .nav-header{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    height: 7vh;
+    align-items: center;
+}
+
+nav .nav-header h3{
+    color: rgb(117, 117, 230);
+}
+
+.h3{
+    color: rgb(34, 30, 30);
+}
+
+nav .nav-items{
+    display: inline-flex;
+    width: 50%;
+    justify-content: center;
+    height: 7vh;
+    align-items: center;
+}
+
+nav .nav{
+    display: flex;
+}
+
+nav .nav-items h3{
+    padding: 0px 20px;
+}
+
+.nav .nav-items .h3 a {
+    list-style-type: none;
+    color: black;
+    text-decoration: none;
+}
+.nav .nav-items .h3 a:hover{
+    color: rgb(83, 83, 212);
+}
+
+.container{
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: rgb(226, 222, 222); */
+}
+
+.container b{
+    font-size: 3vw;
+    padding: 15px 15px;
+    border: 2px solid black;
+    border-radius: 12px;
+    margin: 20px 0px;
+    background-color: rgb(39, 37, 37);
+    color: white;
+}
+
+#color{
+    color: #54ebfa;
+}
+
+#btn:hover{
+    color: white;
+    background-color: rgb(39, 37, 37);
+    cursor: pointer;
+}
+
+#btn{
+    margin: 20px 0px;
+    padding: 12px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 1vw;
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+    nav .nav-header h3{
+        align-items: center;
+    }
+    .nav .nav-items .h3 a{
+        align-items: center;
+    }
+    nav .nav-items h3{
+        padding: 0px 5px;
+    }
+    nav .nav-items{
+        height: 5vh;
+    }
+    nav .nav-header{
+        height: 5vh;
+    }
+    nav{
+        height: 5vh;
+    }
+    .container b{
+        font-size: 6vw;
+    }
+    #btn{
+        font-size: 5vw;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 400px){
+    .container b{
+        font-size: 7vw;
+    }
+    #btn{
+        font-size: 3vw;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 950px){
+    .container b{
+        font-size: 4vw;
+    }
+    #btn{
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .container b{
+        font-size: 6vw;
+    }
+    #btn{
+        font-size: 3vw;
+    }
+}
